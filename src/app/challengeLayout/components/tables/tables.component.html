@@ -1,0 +1,26 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Faces</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of arr" [ngClass]="{'impares': item.odd}">
+      <th scope="row">{{item.id}}</th>
+      <td>
+        <div *ngIf="item.contentArr.length === 0">
+          <div class="container">
+            <div class="multiplosTres"> <img [src]="'./assets/'+item.content" alt=""></div>
+          </div>
+        </div>
+        <div *ngIf="item.contentArr.length > 0">
+          <div class="container">
+            <div class="multiplosTres"> <img [src]="'./assets/'+item.contentArr[0]" alt=""></div>
+            <div class="multiplosCinco"><img [src]="'./assets/'+item.contentArr[1]" alt=""></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

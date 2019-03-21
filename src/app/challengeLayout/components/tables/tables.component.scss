@@ -1,0 +1,13 @@
+.impares{
+    background: rgb(148, 148, 148);
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+    *{
+        max-width: 85px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
