@@ -1,19 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { ChallengeDashboardModule } from './challengeLayout/challenge.module';
 
 import { AppComponent } from './app.component';
-import { TableConteinerComponent } from './challengeLayout/containers/table-conteiner/table-conteiner.component';
-import { TablesComponent } from './challengeLayout/components/tables/tables.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TableConteinerComponent,
-    TablesComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     ChallengeDashboardModule
   ],
   providers: [],

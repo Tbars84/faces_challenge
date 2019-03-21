@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// CONTAINERS
-
-// COMPONENTS
+import { TableConteinerComponent } from './containers/table-conteiner/table-conteiner.component';
+import { TablesComponent } from './components/tables/tables.component';
 
 @NgModule({
     declarations : [
+        TableConteinerComponent,
+        TablesComponent
     ],
     imports : [
-        CommonModule
+    CommonModule
     ],
     exports : [
+        TableConteinerComponent
     ],
 })
 

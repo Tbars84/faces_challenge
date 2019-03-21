@@ -6,7 +6,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let item of arr" [ngClass]="{'impares': item.odd}">
+    <tr *ngFor="let item of arrayTables" [ngClass]="{'impares': item.odd}">
       <th scope="row">{{item.id}}</th>
       <td>
         <div *ngIf="item.contentArr.length === 0">
