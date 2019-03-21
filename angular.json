@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "codeChallenge": {
+    "faces_challenge": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/codeChallenge",
+            "outputPath": "dist/faces_challenge",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "codeChallenge:build"
+            "browserTarget": "faces_challenge:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "codeChallenge:build:production"
+              "browserTarget": "faces_challenge:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "codeChallenge:build"
+            "browserTarget": "faces_challenge:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "codeChallenge-e2e": {
+    "faces_challenge-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "codeChallenge:serve"
+            "devServerTarget": "faces_challenge:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "codeChallenge:serve:production"
+              "devServerTarget": "faces_challenge:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "codeChallenge"
+  "defaultProject": "faces_challenge"
 }
