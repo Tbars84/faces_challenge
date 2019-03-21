@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from '../appModules/app-routing.module';
 
 // CONTAINERS
 
@@ -10,8 +9,7 @@ import { AppRoutingModule } from '../appModules/app-routing.module';
     declarations : [
     ],
     imports : [
-        CommonModule,
-        AppRoutingModule
+        CommonModule
     ],
     exports : [
     ],
